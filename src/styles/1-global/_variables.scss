@@ -1,0 +1,38 @@
+// colors
+
+$black: #202124;
+$white: #fff;
+$body-bg: #f8f8f8;
+$primary: #2978ff;
+$secondary: #6661de;
+$gradient: linear-gradient(45deg, #a349bc 0%, $primary 100%);
+
+$min-contrast-ratio: 2.5;
+
+// buttons
+
+$btn-padding-y: 0.75rem;
+$btn-padding-x: 2.5rem;
+
+$btn-padding-y-lg: 0.75rem;
+$btn-padding-x-lg: 3.25rem;
+
+$box-shadow-sm: 0 4px 8px rgba($secondary, 0.4);
+$box-shadow: 0 9px 16px rgba($secondary, 0.4);
+$btn-focus-box-shadow: 0 4px 8px rgba($secondary, 0.4) !important;
+
+$border-radius: 1rem;
+$border-radius-lg: 10rem;
+
+// inputs
+
+$input-bg: #f6f6f6;
+$input-focus-border-color: $primary;
+$input-focus-bg: $white;
+$input-btn-padding-y: 0.75rem;
+$input-btn-padding-x: 1.5rem;
+$input-btn-focus-box-shadow: 0 0 0 0.05rem $primary;
+
+$display-font-weight: 500;
+
+// $display-font-weight: 800;

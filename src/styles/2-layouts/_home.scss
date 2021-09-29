@@ -1,0 +1,36 @@
+.hero {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 22vh;
+	padding-bottom: 28vh;
+
+	@include media-breakpoint-up(sm) {
+		padding-top: 25vh;
+		padding-bottom: 25vh;
+	}
+
+	// bg shape
+	&::before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: -35%;
+		right: -10%;
+		width: 60vw;
+		height: 60vh;
+		background: $gradient;
+		border-radius: 4rem;
+		border-width: 1.2rem;
+		border-style: solid;
+		border-color: rgb(238, 222, 245);
+		transform: rotate(-6deg);
+		z-index: -1;
+	}
+
+	@include media-breakpoint-up(sm) {
+		&::before {
+			top: -12%;
+		}
+	}
+}

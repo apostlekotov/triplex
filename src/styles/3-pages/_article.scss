@@ -1,0 +1,72 @@
+article {
+	.container {
+		max-width: 56rem !important;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		font-weight: bold;
+
+		@extend .mb-3;
+	}
+
+	p {
+		line-height: 1.7;
+	}
+
+	p > img {
+		width: 100%;
+
+		@extend .my-5;
+	}
+
+	.banner {
+		display: block;
+		width: 100%;
+		height: 50vh;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			margin: auto;
+		}
+
+		.img-banner {
+			display: none;
+		}
+	}
+
+	@include media-breakpoint-up(sm) {
+		.banner {
+			height: 34vh;
+
+			.img-sq {
+				display: none;
+			}
+
+			.img-banner {
+				display: block;
+			}
+		}
+
+		p > img {
+			width: auto;
+			max-width: 68vw;
+			max-height: 60vh;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	@include media-breakpoint-up(xl) {
+		.banner {
+			height: 44vh;
+		}
+	}
+}

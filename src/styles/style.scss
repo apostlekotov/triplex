@@ -1,0 +1,21 @@
+// Triplex's style
+
+// variables
+@import '1-global/variables';
+
+// bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+// global
+@import '1-global/base';
+
+// layouts
+@import '2-layouts/navbar';
+@import '2-layouts/home';
+@import '2-layouts/service';
+@import '2-layouts/contacts';
+
+// pages
+@import '3-pages/portfolio';
+@import '3-pages/article';
+@import '3-pages/error';
